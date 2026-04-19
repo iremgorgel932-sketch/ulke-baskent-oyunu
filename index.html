@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ülke - Başkent Eşleştirme Oyunu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="toast-container"></div>
+    <div class="game-container">
+        <header>
+            <h1>Ülke - Başkent Eşleştirme</h1>
+            <div class="stage-info">Aşama <span id="stage-num">1</span></div>
+            <p class="instructions">Ülkeleri doğru başkentleri ile eşleştirin.</p>
+        </header>
+
+        <div class="board">
+            <div class="column">
+                <h2>Ülkeler</h2>
+                <div id="countries-list" class="list"></div>
+            </div>
+            <div class="column">
+                <h2>Başkentler</h2>
+                <div id="capitals-list" class="list"></div>
+            </div>
+        </div>
+
+        <button id="next-stage-btn" class="hidden">Sonraki Aşama</button>
+        <div id="completion-message" class="hidden">
+            <h2>Tebrikler!</h2>
+            <p>Tüm aşamaları tamamladınız.</p>
+            <button onclick="location.reload()">Tekrar Oyna</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
